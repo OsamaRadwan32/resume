@@ -119,37 +119,43 @@ a {
 #wrapper--techstack__items {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.5em;
   font-size: 0.9em;
+  /* padding-top: 1em; */
+  padding-left: 2em;
+  padding-bottom: 1em;
 }
 
 .card--techstack {
   border: 1px solid var(--mainBorderColor);
   border-radius: 5px;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   align-items: center;
 }
 
 .card--project {
   padding-top: 1em;
   padding-bottom: 1em;
-  border-top: 1px solid var(--mainBorderColor);
+  /* border-top: 1px solid var(--mainBorderColor); */
 }
 
 .card--project a {
   color: var(--mainTextColor);
-
   transition: 0.3s;
 }
 
-.card--project a:hover {
+.card--project a strong:hover {
   color: rgb(30, 190, 214);
 }
 
 .card--work-history {
-  border-left: 1px solid var(--mainBorderColor);
+  /* border-left: 1px solid var(--mainBorderColor); */
   margin-top: 3em;
   margin-bottom: 3em;
+  /* padding-left: 2em; */
+}
+
+.card--work-history strong {
   padding-left: 2em;
 }
 
@@ -178,9 +184,44 @@ a {
   #wrapper--hero {
     flex-direction: column;
   }
+}
 
-  .card--work-history {
-    border-left: none;
-    padding-left: 0;
-  }
+/* Custom Styling */
+
+.qualifications,
+.profile p,
+.work--history p,
+.education p,
+.skills p {
+  padding-left: 2em;
+}
+
+.card--work-history ul {
+  padding-left: 4em;
+}
+
+.card--project {
+  padding-left: 2em;
+}
+
+.card--certificates {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+}
+
+.card--certificates strong {
+  color: var(--mainTextColor);
+  transition: 0.3s;
+}
+
+.card--languages {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+}
+
+.card--languages strong {
+  color: var(--mainTextColor);
+  transition: 0.3s;
 }
