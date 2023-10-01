@@ -192,7 +192,8 @@ a {
 .profile p,
 .work--history p,
 .education p,
-.skills p {
+.skills p,
+.education strong {
   padding-left: 2em;
 }
 
@@ -224,4 +225,9 @@ a {
 .card--languages strong {
   color: var(--mainTextColor);
   transition: 0.3s;
+}
+.card--profile,
+.card--education {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
